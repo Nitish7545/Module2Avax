@@ -43,25 +43,29 @@ The constructor initializes the contract and sets the deployer address as the ow
 This contract is provided under an unlicensed status. See the [UNLICENSE](UNLICENSE) file for details.
 
 ## Project Setup Instructions
+To run this project on your computer after cloning the GitHub repository, follow the steps below:
 
-To run this project on your computer after deploying the contract, follow the steps below:
+Install Dependencies:
 
-1. **Install Dependencies:**
-   - Navigate to the project directory in the terminal.
-   - Run the following command to install project dependencies:
-     ```bash
-     npm install
-     ```
+Navigate to the project directory in the terminal.
+Run the following command to install project dependencies:
+npm install
+Start Ethereum Node:
 
-2. npm hardhat node 
-3. npx hardhat run --network localhost scripts/deploy.js
-4. **Start Front-end Application:**
-   - Run the front-end application to interact with the deployed contract:
-     ```bash
-     npm run dev
-     ```
+Open two additional terminals in your Visual Studio Code or preferred code editor.
 
-3. **Access the Project:**
-   - The project will be accessible on your local machine, typically at [http://localhost:3000/](http://localhost:3000/).
+In the second terminal, start the local Ethereum node using Hardhat:
 
+npx hardhat node
+Deploy Smart Contract:
+
+In the third terminal, deploy the smart contract to the local Ethereum network:
+npx hardhat run --network localhost scripts/deploy.js
+Launch Front-end:
+
+Go back to the first terminal and start the front-end application:
+npm run dev
+Access the Project:
+
+The project will be accessible on your local machine, typically at http://localhost:3000/.
 Now, the project is successfully running on your localhost. Ensure to follow these steps in sequence for a smooth setup process.
